@@ -1,0 +1,26 @@
+/* Styles for navigation bar */
+.navbar {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  .navbar a {
+    color: #fff;
+  }
+  
+  /* Styles for footer */
+  .footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+  }
+  
+  
+
+  /* Add more App specific styles as needed */

@@ -1,0 +1,133 @@
+/* Styles specific to the homepage */
+.home-intro {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .home-intro h1 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+  }
+  
+  .button {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .button button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button button:hover {
+    background-color: var(--secondary-color);
+  }
+
+  .calendar-container {
+    max-width: 1100px; /* Adjust the width as needed */
+    margin: 0 auto; /* This centers the calendar horizontally */
+    padding: 20px;
+  }
+
+  .fc-toolbar-chunk {
+    display: flex;
+    justify-content: center; /* Center flex items horizontally */
+    flex: 1; /* Allow the chunk to grow and take up available space */
+  }
+
+  .fc {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .fc .fc-toolbar-title {
+    font-size: 1.25rem; /* Adjust the title font size as needed */
+    font-weight: 700; /* Makes it bold */
+    text-align: center; /* Center the text horizontally */
+    color: #333; /* A darker color for better readability */
+    /* Add any other styles you want for the title */
+  }
+  
+  .fc .fc-button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; /* Normal font weight */
+    /* Other button styles */
+  }
+  
+  .fc .fc-daygrid-day-number {
+    font-size: 0.8rem; /* Adjust the day number font size as needed */
+  }
+  
+  /* You can add more custom styles for calendar elements as needed */
+
+  .calendar-container .fc-view-harness {
+    max-height: 350px; /* Match this to the max-height of your calendar container */
+    overflow: auto; /* Enable scrolling within the calendar view */
+  }
+
+  .modal {
+    position: fixed;
+    
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-button:hover,
+  .close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .drpdwn {
+    text-align: center;
+  }
+
+  .home-page-container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 15%; /* Adjust the width as needed */
+    background-color: #f7f7f7; /* Example background color */
+    height: 90vh;
+    padding: 20px; /* Padding around the content */
+  }
+  
+  .create-dropdown {
+    margin-bottom: 20px; /* Space below the dropdown */
+  }
+  
+  .main-content {
+    flex-grow: 1;
+  }
+
+  .drpdwn-item {
+    text-align: left !important;
+    margin-left: 0px !important;
+  }
