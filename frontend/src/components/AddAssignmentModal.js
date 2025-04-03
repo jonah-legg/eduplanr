@@ -2,13 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Modal, Button } from 'react-bootstrap';
 
 const AddAssignmentModal = ({ show, handleClose, refreshAssignments }) => {
-  // Add an isLoading state to handle the loading state of classes
   const [isLoading, setIsLoading] = useState(false);
   const [classes, setClasses] = useState([]);
   const [selectedClass, setSelectedClass] = useState('');
   const [nameInput, setNameInput] = useState('');
   const [dueDateInput, setDueDateInput] = useState('');
-  const [colorInput, setColorInput] = useState('#ffffff'); // Default color set to white
+  const [colorInput, setColorInput] = useState('#ffffff');
 
   const colorOptions = [
     '#FF6900', // orange
@@ -87,7 +86,7 @@ const AddAssignmentModal = ({ show, handleClose, refreshAssignments }) => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}` // Assuming you are using Bearer token
+          'Authorization': `Bearer ${token}`
         },
         body: JSON.stringify(assignment)
       });
@@ -105,7 +104,6 @@ const AddAssignmentModal = ({ show, handleClose, refreshAssignments }) => {
 
   const handleSubmit = async () => {
     if (!nameInput.trim() || !dueDateInput.trim()) {
-      // You can also add UI feedback here for the user to know what's missing
       console.error('Name and due date must be provided.');
       return;
     }
@@ -180,7 +178,6 @@ const AddAssignmentModal = ({ show, handleClose, refreshAssignments }) => {
         <Button variant="secondary" onClick={handleClose}>
           Close
         </Button>
-        {/* The Save Assignment button should now work as expected */}
         <Button variant="primary" onClick={handleSubmit} disabled={!selectedClass || !nameInput.trim() || !dueDateInput.trim()}>
           Save Assignment
         </Button>
