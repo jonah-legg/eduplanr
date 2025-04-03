@@ -18,8 +18,8 @@ app.use(cors({
   }));
 
 // Connect to MySQL database from the server
-const sequelize = new Sequelize('defaultdb', 'doadmin', 'AVNS_fpbOPn0PpEQHX8ocGv_', {
-  host: 'db-mysql-nyc3-90514-eduplanr-do-user-16321376-0.c.db.ondigitalocean.com',
+const sequelize = new Sequelize('defaultdb', 'doadmin', 'key', {
+  host: 'hostname.com',
   dialect: 'mysql',
   port: 25060,
   dialectOptions: {
