@@ -10,7 +10,7 @@ const DailyPlanner = () => {
         const baseURL = process.env.REACT_APP_API_BASE_URL;
         const response = await axios.get(`${baseURL}/assignments`, {
           headers: {
-            Authorization: `Bearer ${localStorage.getItem('token')}`, // Replace with your token management
+            Authorization: `Bearer ${localStorage.getItem('token')}`,
           },
         });
         // Assuming the server returns all assignments, filter and sort them here
