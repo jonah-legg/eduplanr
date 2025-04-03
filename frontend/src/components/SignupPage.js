@@ -63,7 +63,7 @@ const SignupPage = (props) => {
     try {
         const baseURL = process.env.REACT_APP_API_BASE_URL;;
         // Update the API endpoint to match the server route
-        const token = 'secret-token'; // Replace with your actual token
+        const token = 'secret-token';
         const response = await axios.post(`${baseURL}/users`, {
         name: username,
         password,
